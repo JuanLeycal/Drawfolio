@@ -1,6 +1,6 @@
 <template>
 <v-card class="wall">
-  <b-navbar sticky="true" id="navBar" class="navBar">
+  <b-navbar :sticky= 'true' id="navBar" class="navBar">
     <a v-scroll-to="{el: '#home', offset: -60}" class="mx-auto">Home</a>
     <a v-scroll-to="{el: '#links', offset: -60}" class="mx-auto">Links</a>
   </b-navbar>
@@ -15,7 +15,8 @@
     </b-row>
     <b-row class="justify-content-md-center">
       <div id="links" class="links">
-        <a href="https://github.com/JuanLeycal" target="_blank" rel="noopener noreferrer"><img src="../assets/git.png" class="img"></a>
+        <a class="a" href="https://github.com/JuanLeycal" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/git.png" class="img static"><img src="../assets/gato.gif" class="active"></a>
       </div>
     </b-row>
   </b-container>
@@ -30,7 +31,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 
 
 h1{
@@ -59,13 +60,28 @@ a{
   font-size: 2rem;
   background: #000b3f;
 }
-
+.a{
+  
+  &:hover{
+    .img{
+      opacity: 0;
+    }
+    .active{
+      opacity: 80%;
+    }
+  }
+}
 .img{
   transition: all 0.3s;
 }
-.img:hover{
-  opacity: 50%;
+.active{
+  transition: all 0.3s;
 }
+
+.static {
+  position:absolute;
+}
+
 .home{
   margin-bottom: 100rem;
 }
