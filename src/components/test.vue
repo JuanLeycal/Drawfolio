@@ -7,6 +7,7 @@
   <div class="title">
     <h1>Juan Leyva's Drawfolio</h1>
   </div>
+
   <b-container>
     <b-row class="justify-content-md-center">
       <div id="home" class="home">
@@ -20,14 +21,16 @@
       </div>
     </b-row>
   </b-container>
+
 </v-card>
 </template>
 
 <script>
 export default {
   name: 'test',
-
+  
 }
+
 </script>
 
 
@@ -59,6 +62,7 @@ a{
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 2rem;
   background: #000b3f;
+  z-index: 1;
 }
 .a{
   
@@ -88,4 +92,5 @@ a{
 .links{
   margin-bottom: 100rem;
 }
+
 </style>
