@@ -9,9 +9,10 @@
   </div>
 
   <b-container>
-    <b-row class="justify-content-md-center">
+    <b-row class="mt-5 justify-content-md-center">
       <div id="home" class="home">
-        <h2>Welcome to my little digital canvas</h2>
+        <h2>The name's Juan</h2>
+        <h3>A frontend developer that also likes drawing.</h3>
       </div>
     </b-row>
     <b-row class="justify-content-md-center">
@@ -45,6 +46,11 @@ h2{
   font-family: 'Gloria Hallelujah', cursive;
    font-size: 3rem;
    color: #000b3f;
+}
+h3{
+  font-family: 'Gloria Hallelujah', cursive;
+   font-size: 1.5rem;
+   color: #9ea6cd;
 }
 a{
   color: #9ea6cd;
@@ -87,6 +93,7 @@ a{
 }
 
 .home{
+  text-align: left;
   margin-bottom: 100rem;
 }
 .links{
